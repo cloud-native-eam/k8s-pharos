@@ -1,1 +1,2 @@
-# k8s-pharos
+# K8s-Pharos
+
