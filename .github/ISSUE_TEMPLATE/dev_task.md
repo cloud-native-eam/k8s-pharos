@@ -4,7 +4,6 @@ about: Write task for develope
 title: ''
 labels: 'enhancement'
 assignees: ''
-projects: 'Development'
 
 ---
 
