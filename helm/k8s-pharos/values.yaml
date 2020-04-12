@@ -1,0 +1,24 @@
+## Default values for K8s-Pharos Agent
+
+deployment:
+    replicas: 1
+    deploymentStrategy:
+        type: RollingUpdate
+    securityContext:
+        enabled: true
+        fsGroup: 999
+        runAsUser: 999
+
+ingest:
+    url: 
+    
+clusterAccess:
+    rbac:
+        create: true
+
+image:
+    repository: alexandriaeam/k8s-pharos
+    tag: 0.0.1
+    pullPolicy: IfNotPresent
+
+namespaceOverride: ""

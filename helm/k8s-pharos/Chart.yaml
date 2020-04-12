@@ -1,0 +1,14 @@
+apiVersion: v1
+name: k8s-pharos
+version: 0.0.1
+appVersion: "1"
+description: Alexandria Kubernetes cluster status scan
+keywords:
+- eam
+- enterprise-architecture
+- observability
+home: https://github.com/cloud-native-eam/k8s-pharos
+sources:
+- https://github.com/cloud-native-eam/k8s-pharos
+maintainers:
+- name: mkorbi
