@@ -22,4 +22,6 @@ func main() {
 
 	// list pods
 	fmt.Println(resources.ListPods(clientset))
+	// list deployments
+	resources.GetDeploy(clientset)
 }

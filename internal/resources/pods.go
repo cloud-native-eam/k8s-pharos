@@ -6,7 +6,6 @@ import (
 )
 
 func ListPods(cs *kubernetes.Clientset) int {
-
 	pods, err := cs.CoreV1().Pods("").List(metav1.ListOptions{})
 	if err != nil {
 	panic(err.Error())
@@ -14,3 +13,4 @@ func ListPods(cs *kubernetes.Clientset) int {
 	numItems := len(pods.Items)
 	return numItems
 }
+
