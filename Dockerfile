@@ -1,10 +1,10 @@
 FROM golang:latest as builder
 WORKDIR /app
 # Copy go mod and sum files
-COPY go.mod go.sum ../
+COPY go.mod go.sum ./
 RUN go mod download
 # Copy the source from the current directory to the Working Directory inside the container
-COPY . .
+COPY ./cmd .
 # Build the Go app
 RUN CGO_ENABLED=0 GOOS=linux go build -a -installsuffix cgo -o main .
 
